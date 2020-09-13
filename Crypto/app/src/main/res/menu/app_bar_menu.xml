@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cryptoFragment"
+        android:icon="@drawable/ic_bitcoin"
+        android:title="@string/bottom_bar_item_left_title"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/favoriteFragment"
+        android:title="@string/bottom_bar_item_center_title"
+        android:icon="@drawable/ic_apple_health"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_bottombar_setting"
+        android:checkable="true"
+        android:title="@string/bottom_bar_item_right_title"
+        app:showAsAction="ifRoom"/>
+</menu>

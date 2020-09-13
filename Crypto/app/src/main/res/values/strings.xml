@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">BİTCOİN</string>
+
+    <!--    BOTTOM BAR-->
+    <string name="bottom_bar_item_right_title">Setting</string>
+    <string name="bottom_bar_item_center_title">Favorite Coin</string>
+    <string name="bottom_bar_item_left_title">Crypto Coin</string>
+
+    <!--    DIALOG-->
+    <string name="dialog_title_mistake">Hata</string>
+    <string name="dialog_title_success">Başarılı</string>
+    <string name="dialog_title_info">Bigilendirme</string>
+    <string name="dialog_title_empty_info">Eksik Bilgi</string>
+
+    <string name="dialog_message_mistake">Bilinmeyen bir hata oluştu.</string>
+    <string name="dialog_message_success">Mesajınız başarıyla gönderilmiştir.</string>
+    <string name="dialog_message_success_process">İşleminiz başarıyla gerçekleşmiştir.</string>
+    <string name="dialog_message_content_not_empty">İçerik boş bırakılamaz.</string>
+
+    <!--    BUTTON-->
+    <string name="button_ok">Tamam</string>
+    <string name="button_delete">Sil</string>
+    <string name="button_cancel">Geç</string>
+    <string name="button_try">Tekrar Dene</string>
+    <string name="button_save">Kaydet</string>
+
+    <!--   Favorite-->
+    <string name="favorite_title">Favorite Coin</string>
+
+    <!--   COUNTER-->
+    <string name="create_counter_title">Crypto Coin</string>
+    <string name="create_counter_choose_time">Zaman Seç</string>
+    <string name="create_counter_try_again">Tekrar Et</string>
+    <string name="create_counter_sound">Ses</string>
+    <string name="create_counter_siren">Siren</string>
+    <string name="create_counter_color">Renk</string>
+    <string name="create_counter_create_fast">Hız Oluştur</string>
+    <string name="create_counter_create_counter">Yeni Sayaç Oluştur</string>
+    <string name="create_counter_repetition">Yinele</string>
+    <string name="hint_counter_repetition_interval">Tekrar Aralığı</string>
+    <string name="hint_counter_name">Örneğin: Dinlenme, Spor, Koşu vb...</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!--   Setting-->
+    <string name="setting_title">Setting</string>
+
+</resources>

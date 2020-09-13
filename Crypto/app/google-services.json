@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "849981904860",
+    "firebase_url": "https://login-140808.firebaseio.com",
+    "project_id": "login-140808",
+    "storage_bucket": "login-140808.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849981904860:android:544e5a019e34fc14bde119",
+        "android_client_info": {
+          "package_name": "com.bitcoin.ticker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849981904860-n3gqc421kdaiucju73n8dv7ee04phitd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS6c9eDuU1CmCbCNDAoJNQcDBi49wKnCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849981904860-n3gqc421kdaiucju73n8dv7ee04phitd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

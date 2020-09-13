@@ -1,0 +1,143 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'org.jetbrains.kotlin.android.extensions'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.bitcoin.ticker"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        // Required when setting minSdkVersion to 20 or lower
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+
+    buildFeatures {
+        viewBinding {
+            enabled true
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //KOTLIN
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    //ANDROIDX
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    //CONSTRAINT LAYOUT
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //BOTTOM BAR
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+
+    //RECYCLERVİEW
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'androidx.annotation:annotation:1.1.0'
+
+    //NAVIGATION KOTLIN
+    def nav_version = "2.3.0"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    //NAVIGATION  FEATURE MODULE SUPPORT
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    //NAVIGATION  TEST NAVIGATION
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    //TIMBER LOG MESSAGE
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //MATERIAL DIALOG
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+
+    //LIFECYCLE
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //HILT DAGGER
+    implementation 'com.google.dagger:hilt-android:2.28.1-alpha'
+    kapt 'com.google.dagger:hilt-android-compiler:2.28.1-alpha'
+    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02'
+    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha02'
+
+    //COROUTINES
+    def coroutines_android_version = '1.3.7'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_android_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_android_version"
+
+    //ROOM
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+
+    //METERİAL BOTTOM BAR
+    def material_version="1.2.0-alpha09"
+    implementation "com.google.android.material:material:$material_version"
+
+
+    //RETROFIT
+    //NETWORK CONNECT
+    def retrofitVersion = '2.7.1'
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    //GSON
+    def gsonVersion = '2.8.2'
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    //OKHTTP
+    def okhttp = '3.14.2'
+    implementation "com.squareup.okhttp3:okhttp:$okhttp"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp"
+
+
+    //FİREBASE AUTACATİON
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:19.3.2'
+    implementation 'com.google.firebase:firebase-firestore:21.6.0'
+
+    //TEST
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cryptoFragment">
+    <fragment
+        android:id="@+id/cryptoFragment"
+        android:name="com.bitcoin.ticker.ui.crypto.CryptoFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/fragment_crypto_coin" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_createCounterFragment_to_cryptoDetailFragment"
+            app:destination="@id/cryptoDetailFragment" />
+        <action
+            android:id="@+id/action_cryptoFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.bitcoin.ticker.ui.setting.SettingFragment"
+        android:label="setting_fragment"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/cryptoDetailFragment"
+        android:name="com.bitcoin.ticker.ui.detail.CryptoDetailFragment"
+        android:label="crypto_detail_fragment"
+        tools:layout="@layout/crypto_detail_fragment" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.bitcoin.ticker.ui.favorite.FavoriteFragment"
+        android:label="favorite_fragment"
+        tools:layout="@layout/favorite_fragment" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_cryptoDetailFragment"
+            app:destination="@id/cryptoDetailFragment" />
+    </fragment>
+</navigation>
