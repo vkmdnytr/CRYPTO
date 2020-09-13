@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     finish()
                 } else {
-                    showGeneralErrorDialog()
+                    showGeneralErrorDialog(text =  task.exception?.localizedMessage)
                 }
             })
     }
@@ -53,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     finish()
                 } else {
-                    showGeneralErrorDialog()
+                    showGeneralErrorDialog(text =  task.exception?.localizedMessage)
                 }
 
             }
@@ -74,7 +74,6 @@ class LoginActivity : AppCompatActivity() {
 
             }
         }
-
 
 
 }
