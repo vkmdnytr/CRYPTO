@@ -134,7 +134,6 @@ class CoinService: Service() {
                     }
                 }
             }
-            Log.d("TAG", "TAG -----$user")
 
         } catch (e: Exception) {
             Log.d("TAG", "In onStartCommand")
